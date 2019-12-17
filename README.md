@@ -12,7 +12,7 @@ Make our little users manipulation app a `json-server` back end with a really RE
 * Make two folders, one a backend and one a frontend. (Name them whatever you'd like.)
 * In the backend folder, create a file called `db.json`. Populate it with our json from the last project, but with two key differences: the array should be enclosed within an object, with the key "users" leading to that array, and the "index" property on each user needs to be changed to an "id" property, so that `json-server` knows what property to handle for you.
 * Now navigate to that folder in a terminal window or tab you set aside for this, and run `json-server --watch db.json`. Your server should start running, tell you what port it's listening on, and even tell you what resources it has (in this case just the route `/users`). We'll be able to keep an eye on this terminal any time we want to check in on what's happening with our server.
-* Go into your frontend folder and create an `index.html` file and a `main.js` file for it to link to. Now link them up with a `<script>` tag.
+* Go into your frontend folder and create an `index.html` file and a `main.js` file for it to link to. Now link them up with a `<script>` tag. 
 * Now do that thing, with the help of the guidelines below.
 
 

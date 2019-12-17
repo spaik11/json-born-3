@@ -1,8 +1,11 @@
-const xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest()
 
 xhr.addEventListener('loadend', (event) => {
-    console.log(event.target.response);
+    const users = JSON.parse(event.target.response);
+})
+xhr.addEventListener('error', () => {
+    console.log('I didn\'t do it! Hmm.')
 })
 
-xhr.open('GET', 'http://localhost:3000/users');
+xhr.open('GET', 'http:local//localhost:3000/users');
 xhr.send();

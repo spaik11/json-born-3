@@ -5,10 +5,10 @@ const getUsers = ()=> {
     xhr.send();
 }
 
-// const getUser = (id)=> {
-//     xhr.open('GET', `http://localhost:3000/user/${id}/`);
-//     xhr.send();
-// }
+const getUser = (id)=> {
+    xhr.open('GET', `http://localhost:3000/user/${id}/`);
+    xhr.send();
+}
 
 // const getFriends = (id)=> {
 //     xhr.open('GET', `http://localhost:3000/user/${id}/`);
@@ -23,13 +23,21 @@ const postUser = (id, age, eyeColor, name) => {
         "age": age,
         "eyeColor": eyeColor,
         "name": name,
-        "friends": [{
-            "id": 0,
-            "name": "Ruby Rogers"}]
+        "friends": []
     }));
 }
 
-const console = ()
+const putUser = (id, age, eyeColor, name) => {
+    xhr.open('PUT', `http://localhost:3000/user/${id}/`);
+    xhr.setRequestHeader('Content-Type', 'application/json')
+    xhr.send(JSON.stringify({
+        "id": id,
+        "age": age,
+        "eyeColor": eyeColor,
+        "name": name,
+        "friends": []
+    }))
+}
 
 
 xhr.addEventListener('loadend', (event) => {

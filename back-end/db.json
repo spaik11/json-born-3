@@ -190,23 +190,10 @@
     },
     {
       "id": 9,
-      "age": 70,
-      "eyeColor": "brown",
-      "name": "Lucy Pickett",
-      "friends": [
-        {
-          "id": 0,
-          "name": "Fletcher Rosario"
-        },
-        {
-          "id": 1,
-          "name": "Snyder Pittman"
-        },
-        {
-          "id": 2,
-          "name": "Ann Bray"
-        }
-      ]
+      "age": 69,
+      "eyeColor": "red",
+      "name": "Jenkins",
+      "friends": []
     }
   ]
 }
